@@ -1,0 +1,20 @@
+version: '3'
+services:
+  classificationbox:
+    image: machinebox/classificationbox
+    environment:
+      - MB_KEY=${MB_KEY}
+      - MB_PORT=8080
+        #- MB_BASICAUTH_USER=joe
+      #- MB_BASICAUTH_PASS=schmoe
+    ports:
+      - "8080:8080"
+  facebox:
+    image: machinebox/facebox
+    environment:
+      - MB_KEY=${MB_KEY}
+      - MB_PORT=8081
+      #- MB_BASICAUTH_USER=joe
+      #- MB_BASICAUTH_PASS=schmoe
+    ports:
+      - "8081:8081"
