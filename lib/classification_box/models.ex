@@ -55,5 +55,5 @@ defmodule ClassificationBox.Prediction do
 end
 
 defmodule ClassificationBox.Predictions do
-    defstruct [:classes, :success]
+  defstruct [:classes, :success]
 end
